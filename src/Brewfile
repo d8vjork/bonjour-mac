@@ -30,6 +30,10 @@ cask "sublime-text"
 cask "microsoft-edge"
 cask "firefox"
 cask "betterzip"
+cask "iina"
+cask "shuttle"
+cask "tuxera-ntfs"
+cask "soundsource"
 
 mas "1Password 7 - Password Manager", id: 1333542190
 mas "Pixelmator Pro", id: 1289583905
@@ -45,3 +49,4 @@ mas "Slack", id: 803453959
 mas "Gaplin", id: 768053424
 # mas "Reeder", id: 1449412482
 mas "Transmit 5", id: 1436522307
+mas "ColorSlurp", id: 1287239339

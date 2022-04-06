@@ -42,6 +42,10 @@ All right... I'll try to make the list for you as much as I can:
 - Microsoft Edge (**used as main**, as for now is the only one that performs the best in Mac OS disabling all the telemetry stuff)
 - Firefox (**good to have variety of engines to test on**, not using chrome/chromium because is using the exact same engines as Edge, V8 + Blink)
 - BetterZip (must have / pay, specially for all the useful addons they add to Mac OS like the Preview one, supports a very large list of compression algos and formats)
+- IINA (free mpv based multimedia player, I use it specially for video, just a great Mac OS must-have free & open source app)
+- Shuttle
+- Tuxera NTFS (ntfs on Mac OS, hope one day Microsoft will open source their filesystem...)
+- SoundSource (such a great app for something that Mac OS doesn't have, a per-app based volume controller + ecualizer & effects / postprocess, plus it can also control input/output devices!)
 
 ### Mas CLI
 
@@ -59,6 +63,7 @@ All right... I'll try to make the list for you as much as I can:
 - Discord
 - Gaplin (useful, specially for the Preview addon that this adds to Mac OS, **just press space when an .svg file is highlighted in Finder**)
 - Transmit 5
+- ColorSlurp (quick & useful color picker)
 
 ## End result on a project folder
 
