@@ -1,0 +1,29 @@
+# PATH
+export PATH="${PATH}:${HOME}/bin"
+export PATH="${PATH}:${HOME}/.composer/vendor/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/usr/local/opt/mysql-client/bin"
+export PATH="$PATH:/usr/local/sbin"
+
+# FNM
+eval "$(fnm env)"
+
+# Homebrew
+export HOMEBREW_BUNDLE_FILE=~/Brewfile
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+# PHP
+export PHP_CS_FIXER_IGNORE_ENV=true
+export COMPOSER_MEMORY_LIMIT=-1
+
+# Some useful env vars
+export DBGP_IDEKEY="VSCODE"
+
+# I don't know where this came but, should be documented before-hand
+export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
+export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
+export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+export GUILE_TLS_CERTIFICATE_DIRECTORY="/usr/local/etc/gnutls/"
+
+# Load custom aliases
+[[ -s "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"

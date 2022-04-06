@@ -1,0 +1,47 @@
+cask_args appdir: '/Applications'
+
+brew "php@7.4"
+brew "php@8.0"
+brew "php"
+brew "composer"
+brew "fnm"
+brew "gh"
+brew "htop"
+brew "telnet"
+brew "wakeonlan"
+brew "wget"
+brew "antigen"
+brew "coreutils"
+brew "grep"
+brew "nmap"
+brew "awscli"
+brew "qcachegrind"
+brew "mas"
+
+cask "docker"
+cask "ksdiff"
+cask "iterm2"
+cask "visual-studio-code"
+cask "tower"
+cask "notion"
+cask "spotify"
+cask "tableplus"
+cask "sublime-text"
+cask "microsoft-edge"
+cask "firefox"
+cask "betterzip"
+
+mas "1Password 7 - Password Manager", id: 1333542190
+mas "Pixelmator Pro", id: 1289583905
+mas "Kaleidoscope", id: 587512244
+mas "iStat Menus", id: 1319778037
+mas "Magnet", id: 441258766
+mas "Telegram", id: 747648890
+mas "Dato", id: 1470584107
+mas "XCode", id: 497799835
+mas "Redis Server", id: 972359186
+mas "Bear", id: 1091189122
+mas "Slack", id: 803453959
+mas "Gaplin", id: 768053424
+# mas "Reeder", id: 1449412482
+mas "Transmit 5", id: 1436522307
