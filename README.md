@@ -27,6 +27,8 @@ All right... I'll try to make the list for you as much as I can:
 - awscli (used to manage all the servers and stuff from companies)
 - qcachegrind (I use this sometimes for debugging with XDebug)
 - mas (let you install App Store apps from the terminal by commands, **required**)
+- lazydocker
+- lazygit
 
 ### Brew casks managed
 
@@ -46,6 +48,7 @@ All right... I'll try to make the list for you as much as I can:
 - Shuttle
 - Tuxera NTFS (ntfs on Mac OS, hope one day Microsoft will open source their filesystem...)
 - SoundSource (such a great app for something that Mac OS doesn't have, a per-app based volume controller + ecualizer & effects / postprocess, plus it can also control input/output devices!)
+- Discord
 
 ### Mas CLI
 

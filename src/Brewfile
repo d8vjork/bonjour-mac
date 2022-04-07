@@ -17,6 +17,9 @@ brew "nmap"
 brew "awscli"
 brew "qcachegrind"
 brew "mas"
+brew "redis"
+brew "lazydocker"
+brew "lazygit"
 
 cask "docker"
 cask "ksdiff"
@@ -34,6 +37,7 @@ cask "iina"
 cask "shuttle"
 cask "tuxera-ntfs"
 cask "soundsource"
+cask "discord"
 
 mas "1Password 7 - Password Manager", id: 1333542190
 mas "Pixelmator Pro", id: 1289583905
