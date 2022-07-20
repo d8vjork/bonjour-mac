@@ -5,12 +5,15 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="$PATH:/usr/local/opt/mysql-client/bin"
 export PATH="$PATH:/usr/local/sbin"
 
-# FNM
-eval "$(fnm env)"
-
 # Homebrew
+export PATH="$PATH:/usr/local/bin"
+# TODO: Uncomment this if you're an Apple Silicon user...
+# export PATH="$PATH:/opt/homebrew/bin"
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+# FNM
+eval "$(fnm env)"
 
 # PHP
 export PHP_CS_FIXER_IGNORE_ENV=true

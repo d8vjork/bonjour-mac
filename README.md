@@ -6,6 +6,12 @@
 
 Let's give your new Mac a warm bonjour with an "D8vjork-style"
 
+## Already user of Apple Silicon?
+
+Please, [read this first](https://docs.brew.sh/FAQ#why-is-the-default-installation-prefix-opthomebrew-on-apple-silicon).
+
+**Then you'll know exactly what to do, uncomment all the stuff related (with a TODO:) in the `.commonrc` file.**
+
 ## What's inside?
 
 All right... I'll try to make the list for you as much as I can:
