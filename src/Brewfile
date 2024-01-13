@@ -10,6 +10,7 @@ brew "php@8.2"
 brew "php"
 brew "composer"
 brew "fnm"
+brew "openjdk@11"
 brew "jenv"
 brew "pyenv"
 
@@ -20,6 +21,7 @@ brew "android-platform-tools"
 # Terminal tools
 brew "sheldon"
 brew "starship"
+brew "terminal-notifier"
 
 # GNU/Linux stuff
 brew "coreutils"
@@ -43,6 +45,7 @@ cask "tableplus"
 brew "qcachegrind"
 brew "lazydocker"
 brew "lazygit"
+brew "hex-fiend"
 
 # Day by day tools (essentials)
 cask "notion"
@@ -66,11 +69,13 @@ brew "wakeonlan"
 brew "wget"
 brew "awscli"
 
+# Required for the part below
 brew "mas"
 
 #
 # App Store
 #
+
 mas "Pixelmator Pro", id: 1289583905
 mas "Kaleidoscope", id: 587512244
 mas "Magnet", id: 441258766
