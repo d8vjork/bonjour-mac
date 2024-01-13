@@ -1,48 +1,76 @@
 cask_args appdir: '/Applications'
 
+#
+# Homebrew
+#
+
+# Programming languages
 brew "php@8.1"
 brew "php@8.2"
 brew "php"
 brew "composer"
 brew "fnm"
-brew "gh"
-brew "htop"
-brew "telnet"
-brew "wakeonlan"
-brew "wget"
-brew "antigen"
+brew "jenv"
+brew "pyenv"
+
+# Mobile development (Android)
+brew "bundletool"
+brew "android-platform-tools"
+
+# Terminal tools
+brew "sheldon"
+brew "starship"
+
+# GNU/Linux stuff
 brew "coreutils"
 brew "grep"
 brew "nmap"
-brew "awscli"
-brew "qcachegrind"
-brew "mas"
-brew "redis"
-brew "lazydocker"
-brew "lazygit"
-brew "1password-cli"
+brew "htop"
 
+# IDEs and browsers
+cask "visual-studio-code"
+cask "sublime-text"
+cask "chrome"
+cask "microsoft-edge"
+cask "firefox"
+
+# Other programming tools
 cask "docker"
 cask "ksdiff"
 cask "iterm2"
-cask "visual-studio-code"
 cask "tower"
+cask "tableplus"
+brew "qcachegrind"
+brew "lazydocker"
+brew "lazygit"
+
+# Day by day tools (essentials)
 cask "notion"
 cask "clickup"
-cask "spotify"
-cask "tableplus"
-cask "sublime-text"
-cask "microsoft-edge"
-cask "firefox"
-cask "betterzip"
-cask "iina"
-cask "shuttle"
-cask "tuxera-ntfs"
 cask "soundsource"
+cask "tuxera-ntfs"
+cask "betterzip"
+cask "shuttle"
+cask "spotify"
+cask "iina"
 cask "discord"
 cask "tinkerwell"
-cask "little-snitch"
+brew "1password-cli"
 
+# Sysadmin stuff
+cask "little-snitch"
+cask "stats"
+brew "gh"
+brew "telnet"
+brew "wakeonlan"
+brew "wget"
+brew "awscli"
+
+brew "mas"
+
+#
+# App Store
+#
 mas "Pixelmator Pro", id: 1289583905
 mas "Kaleidoscope", id: 587512244
 mas "Magnet", id: 441258766
