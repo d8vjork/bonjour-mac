@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
-brew "php@7.4"
-brew "php@8.0"
+brew "php@8.1"
+brew "php@8.2"
 brew "php"
 brew "composer"
 brew "fnm"
@@ -20,6 +20,7 @@ brew "mas"
 brew "redis"
 brew "lazydocker"
 brew "lazygit"
+brew "1password-cli"
 
 cask "docker"
 cask "ksdiff"
@@ -27,6 +28,7 @@ cask "iterm2"
 cask "visual-studio-code"
 cask "tower"
 cask "notion"
+cask "clickup"
 cask "spotify"
 cask "tableplus"
 cask "sublime-text"
@@ -38,19 +40,17 @@ cask "shuttle"
 cask "tuxera-ntfs"
 cask "soundsource"
 cask "discord"
+cask "tinkerwell"
+cask "little-snitch"
 
-mas "1Password 7 - Password Manager", id: 1333542190
 mas "Pixelmator Pro", id: 1289583905
 mas "Kaleidoscope", id: 587512244
-mas "iStat Menus", id: 1319778037
 mas "Magnet", id: 441258766
-mas "Telegram", id: 747648890
 mas "Dato", id: 1470584107
 mas "XCode", id: 497799835
-mas "Redis Server", id: 972359186
 mas "Bear", id: 1091189122
 mas "Slack", id: 803453959
 mas "Gaplin", id: 768053424
 # mas "Reeder", id: 1449412482
-mas "Transmit 5", id: 1436522307
+# mas "Transmit 5", id: 1436522307
 mas "ColorSlurp", id: 1287239339
