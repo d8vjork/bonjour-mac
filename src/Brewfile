@@ -10,13 +10,14 @@ brew "php@8.2"
 brew "php"
 brew "composer"
 brew "fnm"
-brew "openjdk@11"
+brew "openjdk"
 brew "jenv"
 brew "pyenv"
 
 # Mobile development (Android)
 brew "bundletool"
 brew "android-platform-tools"
+brew "android-commandline"
 
 # Terminal tools
 brew "sheldon"
@@ -47,6 +48,7 @@ brew "lazydocker"
 brew "lazygit"
 brew "hex-fiend"
 brew "mysql-client"
+brew "pcre2"
 
 # Day by day tools (essentials)
 cask "notion"

@@ -72,6 +72,12 @@ curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.zshrc > $HOME/.
 # ===============================================================
 
 pecl install redis
+
+# Required to compile some extensions like pcov
+# https://freek.dev/2151-fixing-the-dreaded-pcre2h-file-not-found-error-when-installing-imagick
+ln -s $HOMEBREW_PREFIX/opt/pcre2/include/pcre2.h $HOMEBREW_PREFIX/opt/php@8.1/include/php/ext/pcre/
+ln -s $HOMEBREW_PREFIX/opt/pcre2/include/pcre2.h $HOMEBREW_PREFIX/opt/php@8.2/include/php/ext/pcre/
+ln -s $HOMEBREW_PREFIX/opt/pcre2/include/pcre2.h $HOMEBREW_PREFIX/opt/php@8.3/include/php/ext/pcre/
 pecl install pcov
 
 # ===============================================================
@@ -84,9 +90,9 @@ printf "=%.0s"  $(seq 1 63)
 
 # Install latest Node LTS
 fnm install --lts
-# Add OpenJDK (Java 11) as its the latest stable of the free Open Source version
-jenv add "$HOMEBREW_PREFIX/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
-pyenv install 
+# Add OpenJDK as its the latest stable of the free Open Source version
+jenv add "$HOMEBREW_PREFIX/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
+pyenv install
 
 # Open a new Terminal application window/instance to get all these installed stuff ready and loaded
 osascript -e 'tell application "Terminal" to activate'
