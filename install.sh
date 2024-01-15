@@ -68,6 +68,13 @@ fi
 curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.zshrc > $HOME/.zshrc
 
 # ===============================================================
+# Preparing PHP environment with essential extensions
+# ===============================================================
+
+pecl install redis
+pecl install pcov
+
+# ===============================================================
 # Install latest programming languages with tools like fnm, pyenv, jenv...
 # ===============================================================
 
