@@ -1,10 +1,12 @@
 # Bonjour Mac
 
-![bonjour](https://raw.githubusercontent.com/d8vjork/bonjour-mac/main/bonjour-mac.gif)
+![bonjour](art/bonjour-mac.gif)
 
 [![Take a peek on VSCode online](https://img.shields.io/badge/vscode-edit%20online-blue?logo=visualstudiocode)](https://vscode.dev/github/d8vjork/bonjour-mac)
 
 Let's give your new Mac a warm bonjour with an "D8vjork-style"
+
+**Note: Requires a fresh installed Mac OS with nothing installed previously**
 
 ## Installation
 
@@ -75,7 +77,7 @@ The rest of the stuff I don't really need to mention, [find their utility by you
 
 ## End result on a project folder
 
-![image](https://user-images.githubusercontent.com/2331052/141961104-9153e8f6-d771-467b-a7d6-ac9ac5ae7432.png)
+![image](art/screenshot.png)
 
 ## License
 
