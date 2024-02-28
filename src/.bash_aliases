@@ -5,6 +5,14 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
 
+alias around="grep -B 6 -A 6 --color $1"
+alias port="lsof -i -P | grep -i 'listen' | grep $1"   
+alias nport="netstat -an -ptcp | grep 'LISTEN' | grep $1"
+alias ports="lsof -i -P | grep -i 'listen'"
+alias nports="netstat -an -ptcp | grep 'LISTEN'"
+alias dnsclear="sudo killall -HUP mDNSResponder"
+alias bin-arch="lipo -archs $1"
+
 alias edit='ox'
 alias redisclean='redis-cli flushall'
 

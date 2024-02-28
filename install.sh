@@ -28,7 +28,7 @@ echo "Install applications using Homebrew (brew)"
 printf "=%.0s"  $(seq 1 63)
 
 # ===============================================================
-# Grab and prepare terminal stuff backing up previous
+# Grab and prepare Terminal stuff backing up previous
 # ===============================================================
 
 printf "=%.0s"  $(seq 1 63)
@@ -66,6 +66,12 @@ then
 fi
 
 curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.zshrc > $HOME/.zshrc
+
+# Configure Starship (terminal prompt theme)
+curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.config/starship.toml > $HOME/.config/starship.toml
+
+# Configure Sheldon plugins (zsh terminal tools)
+curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.config/sheldon/plugins.toml > $HOME/.config/sheldon/plugins.toml
 
 # ===============================================================
 # Preparing PHP environment with essential extensions
