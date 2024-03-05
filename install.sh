@@ -21,7 +21,7 @@ then
     mv Brewfile Brewfile.bkp
 fi
 
-curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/Brewfile > $HOME/Brewfile
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/Brewfile > $HOME/Brewfile
 
 printf "=%.0s"  $(seq 1 63)
 echo "Install applications using Homebrew (brew)"
@@ -41,7 +41,7 @@ then
     mv .bash_aliases .bash_aliases.bkp
 fi
 
-curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.bash_aliases > $HOME/.bash_aliases
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.bash_aliases > $HOME/.bash_aliases
 
 # Install .commonrc
 if [ -f "$HOME/.commonrc" ]
@@ -49,7 +49,7 @@ then
     mv .commonrc .commonrc.bkp
 fi
 
-curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.commonrc > $HOME/.commonrc
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.commonrc > $HOME/.commonrc
 
 # Install .bashrc
 if [ -f "$HOME/.bashrc" ]
@@ -57,7 +57,7 @@ then
     mv .bashrc .bashrc.bkp
 fi
 
-curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.bashrc > $HOME/.bashrc
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.bashrc > $HOME/.bashrc
 
 # Install .zshrc
 if [ -f "$HOME/.zshrc" ]
@@ -65,13 +65,13 @@ then
     mv .zshrc .zshrc.bkp
 fi
 
-curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.zshrc > $HOME/.zshrc
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.zshrc > $HOME/.zshrc
 
 # Configure Starship (terminal prompt theme)
-curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.config/starship.toml > $HOME/.config/starship.toml
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.config/starship.toml > $HOME/.config/starship.toml
 
 # Configure Sheldon plugins (zsh terminal tools)
-curl https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/.config/sheldon/plugins.toml > $HOME/.config/sheldon/plugins.toml
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.config/sheldon/plugins.toml > $HOME/.config/sheldon/plugins.toml
 
 # ===============================================================
 # Preparing PHP environment with essential extensions
