@@ -4,7 +4,7 @@
 # Install pre-requirements (Homebrew)
 # ===============================================================
 
-if [ ! command -v brew &> /dev/null ]
+if ! command -v brew &> /dev/null
 then
     printf "=%.0s"  $(seq 1 63)
     printf "\n"
