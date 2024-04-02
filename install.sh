@@ -7,8 +7,10 @@
 if [ ! command -v brew &> /dev/null ]
 then
     printf "=%.0s"  $(seq 1 63)
-    echo "Install missing Homebrew (required for this script)"
+    printf "\n"
+    printf "Install missing Homebrew (required for this script)\n"
     printf "=%.0s"  $(seq 1 63)
+    printf "\n"
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
@@ -24,16 +26,22 @@ fi
 curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/Brewfile > $HOME/Brewfile
 
 printf "=%.0s"  $(seq 1 63)
-echo "Install applications using Homebrew (brew)"
+printf "\n"
+printf "Install applications using Homebrew (brew)\n"
 printf "=%.0s"  $(seq 1 63)
+printf "\n"
+
+brew bundle install
 
 # ===============================================================
 # Grab and prepare Terminal stuff backing up previous
 # ===============================================================
 
 printf "=%.0s"  $(seq 1 63)
-echo "Install terminal customisations and tools (backing up previous config)"
+printf "\n"
+printf "Install terminal customisations and tools (backing up previous config)\n"
 printf "=%.0s"  $(seq 1 63)
+printf "\n"
 
 # Install Bash aliases
 if [ -f "$HOME/.bash_aliases" ]
@@ -91,8 +99,10 @@ pecl install pcov
 # ===============================================================
 
 printf "=%.0s"  $(seq 1 63)
-echo "Install programming languages (NodeJS, Python, Java)"
+printf "\n"
+printf "Install programming languages (NodeJS, Python, Java)\n"
 printf "=%.0s"  $(seq 1 63)
+printf "\n"
 
 # Install latest Node LTS
 fnm install --lts
@@ -100,11 +110,26 @@ fnm install --lts
 jenv add "$HOMEBREW_PREFIX/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
 pyenv install
 
-# Open a new Terminal application window/instance to get all these installed stuff ready and loaded
-osascript -e 'tell application "Terminal" to activate'
+# ===============================================================
+# Finalise preparing Mac OS user preferences
+# ===============================================================
 
-# Close this instance
-exit
+printf "=%.0s"  $(seq 1 63)
+printf "\n"
+printf "Finalise preparing Mac OS user preferences\n"
+printf "=%.0s"  $(seq 1 63)
+printf "\n"
 
-# Just in case :)
-echo "Installation finished, please close this terminal window and/or reopen a new one if needed"
+# Grab and install retina-ready font used in Terminal profile
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/FiraCodeNerdFont-Retina.ttf > $HOME/Library/Fonts
+
+# Grab to temporary folder and install (open) Terminal profile
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/D8vjork.terminal > /tmp/D8vjork.terminal
+
+open /tmp/D8vjork.terminal
+
+# Grab user preferences file
+curl -L https://raw.githubusercontent.com/d8vjork/bonjour-mac/HEAD/src/.macos > $HOME/.macos
+
+# Need to logout / login again to apply .macos custom preferences - THIS NEED TO BE LAST
+osascript -e 'tell app "System Events" to log out'
