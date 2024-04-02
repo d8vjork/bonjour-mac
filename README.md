@@ -10,6 +10,9 @@ Let's give your new Mac a warm bonjour with an "D8vjork-style"
 
 ## Installation
 
+> [!IMPORTANT]  
+> Previous to this is required to run `xcode-select --install` to install [Homebrew](https://brew.sh/) on the Mac.
+
 Just grab the [install.sh](install.sh) or execute this:
 
 ```bash
