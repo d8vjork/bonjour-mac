@@ -45,9 +45,10 @@ cask "tableplus"
 brew "qcachegrind"
 brew "lazydocker"
 brew "lazygit"
-brew "hex-fiend"
+cask "hex-fiend"
 brew "mysql-client"
 brew "pcre2"
+brew "scrcpy"
 
 # Day by day tools (essentials)
 cask "notion"
